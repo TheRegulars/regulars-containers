@@ -1,6 +1,6 @@
 FROM alpine:3.8
 
-RUN apk --no-cache add murmur && mkdir -p /var/lib/murmur && mkdir -p /etc/murmur
+RUN apk --no-cache add murmur icu && mkdir -p /var/lib/murmur && mkdir -p /etc/murmur
 VOLUME ["/var/lib/murmur", "/etc/murmur"]
 
 USER murmur
